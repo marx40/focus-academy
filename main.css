@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    display: 0;
+    font-family: "Archivo", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #202020;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/*Cabeçalho*/
+header {
+    background-color: #141414;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    position:sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom-style: solid;
+    border-color: #363636;
+}
+
+.header .container {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.central {
+    padding: 70px 0 40px;
+    border-bottom: 1px solid #363636;
+    background: linear-gradient(145deg, #202020 0%, #333333 100%);
+}
+
+.central-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600vh;
+}
