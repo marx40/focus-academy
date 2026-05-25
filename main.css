@@ -28,7 +28,6 @@ header {
     color: #fff;
     position:sticky;
     top: 0;
-    z-index: 10;
     border-bottom-style: solid;
     border-color: #363636;
 }
@@ -36,8 +35,8 @@ header {
 .header .container {
     display: flex;
     align-items: baseline;
-    gap: 12px;
-    justify-content: space-between;
+    gap: 5px;
+    justify-content: flex-start;
 }
 
 .text {
@@ -59,4 +58,5 @@ header {
     text-align: center;
     margin: 0 auto;
     max-width: 600vh;
+    color: #fff;
 }
