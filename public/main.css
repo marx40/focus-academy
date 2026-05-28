@@ -20,9 +20,9 @@ body {
     padding: 0 24px;
 }
 
-header {
+.header {
     background-color: #141414;
-    padding: 10px;
+    padding: 10px 0;
     color: #fff;
     position:sticky;
     border-bottom-style: solid;
@@ -35,12 +35,15 @@ header {
 .header .container {
     display: flex;
     justify-content: center;
+    align-items: baseline;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .text {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: -1px;
 }
 
 /*Sessão Principal*/
@@ -65,10 +68,12 @@ header {
 
 .central-content h2 {
     color: #bebebe;
+    font-size: 2.2rem;
 }
 
 .central-content .line{
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 /* Botão*/
@@ -111,6 +116,10 @@ header {
     text-shadow: 0 0 10px  #0c0c0c;
 }
 
+.content i {
+    color: #ff7b00;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -138,8 +147,9 @@ header {
 }
 
 .card .icon {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 15px;
+    color: #ff7b00
 }
 
 .card h3 {
@@ -175,4 +185,19 @@ header {
     flex-wrap: wrap;
     list-style: none;
     text-decoration: none;
+}
+
+/*Responsivo*/
+@media (max-width: 780px) {
+    .container{
+        padding:0 25px;
+    }
+
+    .central h1{
+        font-size: 2rem;
+    }
+
+    .central p {
+        font-size: 1.2rem;
+    }
 }
