@@ -2,7 +2,7 @@
 
 * {
     margin: 0;
-    display: 0;
+    padding: 0;
     font-family: "Archivo", sans-serif;
 }
 
@@ -30,7 +30,6 @@ body {
     border-width: 1px;
     box-shadow: 0 0 10px 0 #141414;
 }
-
 
 .header .container {
     display: flex;
@@ -60,9 +59,10 @@ body {
     gap: 20px;
     text-align: center;
     margin: 0 auto;
-    max-width: 600vh;
+    max-width: 600px;
+    width: 100%;
+    padding: 0 20px;
     color: #fff;
-    width: 500px;
     margin-bottom: 50px;
 }
 
@@ -189,15 +189,67 @@ body {
 
 /*Responsivo*/
 @media (max-width: 780px) {
-    .container{
-        padding:0 25px;
+
+    .container {
+        padding: 0 20px;
     }
 
-    .central h1{
-        font-size: 2rem;
+    .header .container {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .central p {
-        font-size: 1.2rem;
+    .text h1 {
+        font-size: 1.5rem;
+    }
+
+    .central {
+        padding: 50px 0 30px;
+    }
+
+    .central-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .central-content .line {
+        font-size: 1rem;
+    }
+
+    .central-content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .btn {
+        width: 90%;
+        max-width: 300px;
+        font-size: 1rem;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .footer-links ul {
+        gap: 15px;
+        font-size: 0.9rem;
+    }
+
+    .marca p {
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 0 10px;
     }
 }
